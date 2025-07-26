@@ -30,19 +30,19 @@
 }
 
 .text-glow-purple {
-  text-shadow: 0 0 10px rgba(139, 92, 246, 0.6), 0 0 20px rgba(139, 92, 246, 0.4), 0 0 30px rgba(139, 92, 246, 0.2);
+  text-shadow: 0 0 30px rgba(139, 92, 246, 0.6), 0 0 50px rgba(139, 92, 246, 0.4), 0 0 100px rgba(139, 92, 246, 0.2);
 }
 
 .text-glow-pink {
-  text-shadow: 0 0 10px rgba(236, 72, 153, 0.6), 0 0 20px rgba(236, 72, 153, 0.4), 0 0 30px rgba(236, 72, 153, 0.2);
+  text-shadow: 0 0 30px rgba(236, 72, 153, 0.6), 0 0 50px rgba(236, 72, 153, 0.4), 0 0 100px rgba(236, 72, 153, 0.2);
 }
 
 .text-glow-white {
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.4), 0 0 50px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.4), 0 0 50px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
 }
 
 .text-glow-gray {
-  text-shadow: 0 0 8px rgba(156, 163, 175, 0.4), 0 0 16px rgba(156, 163, 175, 0.2), 0 0 24px rgba(156, 163, 175, 0.1);
+  text-shadow: 0 0 30px rgba(156, 163, 175, 0.4), 0 0 50px rgba(156, 163, 175, 0.2), 0 0 100px rgba(156, 163, 175, 0.1);
 }
 
 @keyframes floatY {
