@@ -26,7 +26,7 @@
 }
 
 .text-glow-blue {
-  text-shadow: 0 0 10px rgba(59, 130, 246, 0.6), 0 0 20px rgba(59, 130, 246, 0.4), 0 0 30px rgba(59, 130, 246, 0.2);
+  text-shadow: 0 0 30px rgba(59, 130, 246, 0.6), 0 0 50px rgba(59, 130, 246, 0.4), 0 0 70px rgba(59, 130, 246, 0.2);
 }
 
 .text-glow-purple {
