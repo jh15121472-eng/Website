@@ -58,19 +58,20 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ src, poster, title, aspectRat
       
       {/* Play/Pause Overlay */}
       <div 
-        className={`absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center transition-opacity duration-500 ${
-          showOverlay ? 'opacity-100' : 'opacity-0 pointer-events-none'
-        }`}
-        onClick={handlePlayPause}
-      >
-        <button className="p-4 rounded-full bg-white bg-opacity-20 backdrop-blur-sm hover:bg-opacity-30 transition-all duration-200">
-          {isPlaying ? (
-            <Pause className="w-8 h-8 text-white" />
-          ) : (
-            <Play className="w-8 h-8 text-white ml-1" />
-          )}
-        </button>
-      </div>
+  className={`absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center transition-opacity duration-500 ${
+    isPlaying ? 'opacity-0' : 'opacity-100'
+  }`}
+  onClick={handlePlayPause}
+>
+  <button className="p-4 rounded-full glass-button">
+    {isPlaying ? (
+      <Pause className="w-8 h-8 text-white" />
+    ) : (
+      <Play className="w-8 h-8 text-white ml-1" />
+    )}
+  </button>
+</div>
+
 
       {/* Controls */}
       <div 
