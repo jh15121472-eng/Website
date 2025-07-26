@@ -285,7 +285,7 @@ function App() {
                 <VideoPlayer
                   src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
                   poster="https://images.pexels.com/photos/1112598/pexels-photo-1112598.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                  title="Showreel"
+                  title="Showreel"ZZ
                   aspectRatio="16:9"
                 />
               </div>
