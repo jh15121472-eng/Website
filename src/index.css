@@ -57,7 +57,7 @@
 }
 
 /* Mobile-specific optimizations */
-@media (max-width: 768px) {
+@media (max-width: 700px) {
   .floating-icons {
     transform: scale(0.8);
   }
