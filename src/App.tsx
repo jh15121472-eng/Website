@@ -420,7 +420,7 @@ function App() {
             <p className="text-lg sm:text-xl text-gray-300 mb-6 md:mb-8 px-4 text-glow-gray">
               Ready to bring your vision to life? Get in touch to discuss your next project.
             </p>
-            <button className="px-8 sm:px-12 py-3 md:py-4 bg-white text-gray-900 rounded-lg font-medium hover:bg-gray-100 transition-colors duration-200 mx-4 text-glow">
+            <button className="px-8 sm:px-12 py-3 md:py-4 glass-button-white text-white rounded-lg font-medium mx-4 text-glow-white">
               Start a Project
             </button>
           </div>
