@@ -45,55 +45,6 @@
   text-shadow: 0 0 8px rgba(156, 163, 175, 0.4), 0 0 16px rgba(156, 163, 175, 0.2), 0 0 24px rgba(156, 163, 175, 0.1);
 }
 
-/* Glass morphism effect for buttons */
-.glass-button {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  transition: all 0.3s ease;
-}
-
-.glass-button:hover {
-  background: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.5);
-  transform: translateY(-2px);
-}
-
-.glass-button-blue {
-  background: rgba(59, 130, 246, 0.2);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(59, 130, 246, 0.3);
-  box-shadow: 0 8px 32px 0 rgba(59, 130, 246, 0.3);
-  transition: all 0.3s ease;
-}
-
-.glass-button-blue:hover {
-  background: rgba(59, 130, 246, 0.3);
-  border: 1px solid rgba(59, 130, 246, 0.4);
-  box-shadow: 0 8px 32px 0 rgba(59, 130, 246, 0.5);
-  transform: translateY(-2px);
-}
-
-.glass-button-white {
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.1);
-  transition: all 0.3s ease;
-}
-
-.glass-button-white:hover {
-  background: rgba(255, 255, 255, 0.25);
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.2);
-  transform: translateY(-2px);
-}
-
 @keyframes floatY {
   0%   { transform: translateY(0); }
   50%  { transform: translateY(-15px); }

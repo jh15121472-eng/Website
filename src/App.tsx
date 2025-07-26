@@ -63,7 +63,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ src, poster, title, aspectRat
         }`}
         onClick={handlePlayPause}
       >
-        <button className="p-4 rounded-full glass-button">
+        <button className="p-4 rounded-full bg-white bg-opacity-20 backdrop-blur-sm hover:bg-opacity-30 transition-all duration-200">
           {isPlaying ? (
             <Pause className="w-8 h-8 text-white" />
           ) : (
@@ -83,7 +83,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ src, poster, title, aspectRat
           <div className="flex items-center space-x-2">
             <button 
               onClick={(e) => { e.stopPropagation(); handleMuteToggle(); }}
-              className="p-2 rounded-full glass-button"
+              className="p-2 rounded-full bg-white bg-opacity-20 hover:bg-opacity-30 transition-all duration-200"
             >
               {isMuted ? (
                 <VolumeX className="w-4 h-4 text-white" />
@@ -91,7 +91,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ src, poster, title, aspectRat
                 <Volume2 className="w-4 h-4 text-white" />
               )}
             </button>
-            <button className="p-2 rounded-full glass-button">
+            <button className="p-2 rounded-full bg-white bg-opacity-20 hover:bg-opacity-30 transition-all duration-200">
               <Maximize className="w-4 h-4 text-white" />
             </button>
           </div>
@@ -128,8 +128,8 @@ const FloatingNavbar: React.FC = () => {
             onClick={() => scrollToSection('home')}
             className={`flex items-center space-x-2 px-4 py-2 rounded-full transition-all duration-300 ${
               activeSection === 'home' 
-                ? 'glass-button-blue text-white text-glow-white' 
-                : 'text-white/80 hover:text-white glass-button text-glow-gray'
+                ? 'bg-blue-600 text-white text-glow-white' 
+                : 'text-white/80 hover:text-white hover:bg-white/10 text-glow-gray'
             }`}
           >
             <Home className="w-4 h-4" />
@@ -140,8 +140,8 @@ const FloatingNavbar: React.FC = () => {
             onClick={() => scrollToSection('videos')}
             className={`flex items-center space-x-2 px-4 py-2 rounded-full transition-all duration-300 ${
               activeSection === 'videos' 
-                ? 'glass-button-blue text-white text-glow-white' 
-                : 'text-white/80 hover:text-white glass-button text-glow-gray'
+                ? 'bg-blue-600 text-white text-glow-white' 
+                : 'text-white/80 hover:text-white hover:bg-white/10 text-glow-gray'
             }`}
           >
             <Play className="w-4 h-4" />
@@ -150,7 +150,7 @@ const FloatingNavbar: React.FC = () => {
           
           <button
             onClick={openInstagram}
-            className="flex items-center space-x-2 px-4 py-2 rounded-full text-white/80 hover:text-white glass-button transition-all duration-300 text-glow-gray"
+            className="flex items-center space-x-2 px-4 py-2 rounded-full text-white/80 hover:text-white hover:bg-white/10 transition-all duration-300 text-glow-gray"
           >
             <Instagram className="w-4 h-4" />
             <span className="text-sm font-medium hidden sm:inline text-glow-white">Instagram</span>
@@ -160,8 +160,8 @@ const FloatingNavbar: React.FC = () => {
             onClick={() => scrollToSection('contact')}
             className={`flex items-center space-x-2 px-4 py-2 rounded-full transition-all duration-300 ${
               activeSection === 'contact' 
-                ? 'glass-button-blue text-white text-glow-white' 
-                : 'text-white/80 hover:text-white glass-button text-glow-gray'
+                ? 'bg-blue-600 text-white text-glow-white' 
+                : 'text-white/80 hover:text-white hover:bg-white/10 text-glow-gray'
             }`}
           >
             <Mail className="w-6 h-6" />
@@ -420,7 +420,7 @@ function App() {
             <p className="text-lg sm:text-xl text-gray-300 mb-6 md:mb-8 px-4 text-glow-gray">
               Ready to bring your vision to life? Get in touch to discuss your next project.
             </p>
-            <button className="px-8 sm:px-12 py-3 md:py-4 glass-button-white text-white rounded-lg font-medium mx-4 text-glow-white">
+            <button className="px-8 sm:px-12 py-3 md:py-4 bg-white text-gray-900 rounded-lg font-medium hover:bg-gray-100 transition-colors duration-200 mx-4 text-glow">
               Start a Project
             </button>
           </div>
