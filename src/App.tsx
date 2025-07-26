@@ -11,7 +11,7 @@ interface VideoPlayerProps {
 
 const VideoPlayer: React.FC<VideoPlayerProps> = ({ src, poster, title, aspectRatio }) => {
   const [isPlaying, setIsPlaying] = useState(false);
-  const [isMuted, setIsMuted] = useState(true);
+  const [isMuted, setIsMuted] = useState(title === "Showreel" ? false : true);
   const [showControls, setShowControls] = useState(false);
   const [showOverlay, setShowOverlay] = useState(true);
 
