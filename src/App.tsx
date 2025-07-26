@@ -279,7 +279,7 @@ function App() {
             </div>
             
             {/* Showreel */}
-            <div className="max-w-6xl mx-auto">
+            <div className="max-w-6xl mx-full">
               <div className="relative z-10 backdrop-blur-lg border border-white/10 rounded-3xl p-6 md:p-12 shadow-lg bg-gradient-to-br from-[#0e006b]/20 via-[#130029]/20 to-[#00020d]/20">
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 md:mb-8 text-white px-4 text-glow-white">Showreel</h2>
                 <VideoPlayer
