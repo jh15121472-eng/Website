@@ -79,7 +79,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ src, poster, title, aspectRat
         }`}
       >
         <div className="flex items-center justify-between">
-          <h3 className="text-white font-medium text-sm">{title}</h3>
+          <h3 className="text-white font-medium text-sm text-glow-white">{title}</h3>
           <div className="flex items-center space-x-2">
             <button 
               onClick={(e) => { e.stopPropagation(); handleMuteToggle(); }}
@@ -128,44 +128,44 @@ const FloatingNavbar: React.FC = () => {
             onClick={() => scrollToSection('home')}
             className={`flex items-center space-x-2 px-4 py-2 rounded-full transition-all duration-300 ${
               activeSection === 'home' 
-                ? 'bg-blue-600 text-white' 
-                : 'text-white/80 hover:text-white hover:bg-white/10'
+                ? 'bg-blue-600 text-white text-glow-white' 
+                : 'text-white/80 hover:text-white hover:bg-white/10 text-glow-gray'
             }`}
           >
             <Home className="w-4 h-4" />
-            <span className="text-sm font-medium hidden sm:inline">Home</span>
+            <span className="text-sm font-medium hidden sm:inline text-glow-white">Home</span>
           </button>
           
           <button
             onClick={() => scrollToSection('videos')}
             className={`flex items-center space-x-2 px-4 py-2 rounded-full transition-all duration-300 ${
               activeSection === 'videos' 
-                ? 'bg-blue-600 text-white' 
-                : 'text-white/80 hover:text-white hover:bg-white/10'
+                ? 'bg-blue-600 text-white text-glow-white' 
+                : 'text-white/80 hover:text-white hover:bg-white/10 text-glow-gray'
             }`}
           >
             <Play className="w-4 h-4" />
-            <span className="text-sm font-medium hidden sm:inline">Videos</span>
+            <span className="text-sm font-medium hidden sm:inline text-glow-white">Videos</span>
           </button>
           
           <button
             onClick={openInstagram}
-            className="flex items-center space-x-2 px-4 py-2 rounded-full text-white/80 hover:text-white hover:bg-white/10 transition-all duration-300"
+            className="flex items-center space-x-2 px-4 py-2 rounded-full text-white/80 hover:text-white hover:bg-white/10 transition-all duration-300 text-glow-gray"
           >
             <Instagram className="w-4 h-4" />
-            <span className="text-sm font-medium hidden sm:inline">Instagram</span>
+            <span className="text-sm font-medium hidden sm:inline text-glow-white">Instagram</span>
           </button>
           
           <button
             onClick={() => scrollToSection('contact')}
             className={`flex items-center space-x-2 px-4 py-2 rounded-full transition-all duration-300 ${
               activeSection === 'contact' 
-                ? 'bg-blue-600 text-white' 
-                : 'text-white/80 hover:text-white hover:bg-white/10'
+                ? 'bg-blue-600 text-white text-glow-white' 
+                : 'text-white/80 hover:text-white hover:bg-white/10 text-glow-gray'
             }`}
           >
             <Mail className="w-6 h-6" />
-            <span className="text-sm font-medium hidden sm:inline">Contact</span>
+            <span className="text-sm font-medium hidden sm:inline text-glow-white">Contact</span>
           </button>
         </div>
       </div>
@@ -255,22 +255,22 @@ function App() {
           <div className="relative z-10">
             {/* Hero Content */}
             <div className="text-center mb-8 md:mb-15">
-              <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold mb-4 md:mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+              <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold mb-4 md:mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent text-glow-blue">
                 Aamir Naqvi
               </h1>
-              <p className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-6 md:mb-8 max-w-2xl mx-auto px-4">
+              <p className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-6 md:mb-8 max-w-2xl mx-auto px-4 text-glow-gray">
                 Crafting compelling visual stories through the art of editing
               </p>
               <div className="flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-4 mb-8 md:mb-16 px-4">
                 <button 
                   onClick={() => document.getElementById('videos')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="px-6 sm:px-8 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg font-medium transition-colors duration-200 w-full sm:w-auto"
+                  className="px-6 sm:px-8 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg font-medium transition-colors duration-200 w-full sm:w-auto text-glow-white"
                 >
                   View Work
                 </button>
                 <button 
                   onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="px-6 sm:px-8 py-3 border border-gray-400 hover:border-white rounded-lg font-medium transition-colors duration-200 w-full sm:w-auto"
+                  className="px-6 sm:px-8 py-3 border border-gray-400 hover:border-white rounded-lg font-medium transition-colors duration-200 w-full sm:w-auto text-glow-white"
                 >
                   Contact Me
                 </button>
@@ -279,7 +279,7 @@ function App() {
             
             {/* Showreel */}
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 md:mb-8 text-white px-4">Showreel</h2>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 md:mb-8 text-white px-4 text-glow-white">Showreel</h2>
               <VideoPlayer
                 src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
                 poster="https://images.pexels.com/photos/1112598/pexels-photo-1112598.jpeg?auto=compress&cs=tinysrgb&w=1200"
@@ -320,10 +320,10 @@ function App() {
         <div className="max-w-6xl mx-auto">
           <div className="relative z-10 backdrop-blur-lg border border-white/10 rounded-3xl p-6 md:p-12 shadow-lg bg-gradient-to-br from-[#0e006b]/20 via-[#130029]/20 to-[#00020d]/20">
             <div className="text-center mb-8 md:mb-12">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 md:mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent px-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 md:mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent px-4 text-glow-blue">
                 Cinematic Projects
               </h2>
-              <p className="text-gray-300 text-center mb-0 max-w-2xl mx-auto px-4">
+              <p className="text-gray-300 text-center mb-0 max-w-2xl mx-auto px-4 text-glow-gray">
                 Wide-format content including commercials, music videos, and documentaries
               </p>
             </div>
@@ -371,10 +371,10 @@ function App() {
         <div className="max-w-6xl mx-auto">
           <div className="relative z-10 backdrop-blur-lg border border-white/10 rounded-3xl p-6 md:p-12 shadow-lg bg-gradient-to-br from-[#0e006b]/20 via-[#130029]/20 to-[#00020d]/20">
             <div className="text-center mb-8 md:mb-12">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 md:mb-6 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent px-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 md:mb-6 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent px-4 text-glow-purple">
                 Social Media Content
               </h2>
-              <p className="text-gray-300 text-center mb-0 max-w-2xl mx-auto px-4">
+              <p className="text-gray-300 text-center mb-0 max-w-2xl mx-auto px-4 text-glow-gray">
                 Vertical content optimized for mobile platforms and social media
               </p>
             </div>
@@ -416,11 +416,11 @@ function App() {
         
         <div className="max-w-4xl mx-auto text-center">
           <div className="relative z-10">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-white px-4">Let's Create Something Amazing</h2>
-            <p className="text-lg sm:text-xl text-gray-300 mb-6 md:mb-8 px-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-white px-4 text-glow-white">Let's Create Something Amazing</h2>
+            <p className="text-lg sm:text-xl text-gray-300 mb-6 md:mb-8 px-4 text-glow-gray">
               Ready to bring your vision to life? Get in touch to discuss your next project.
             </p>
-            <button className="px-8 sm:px-12 py-3 md:py-4 bg-white text-gray-900 rounded-lg font-medium hover:bg-gray-100 transition-colors duration-200 mx-4">
+            <button className="px-8 sm:px-12 py-3 md:py-4 bg-white text-gray-900 rounded-lg font-medium hover:bg-gray-100 transition-colors duration-200 mx-4 text-glow">
               Start a Project
             </button>
           </div>
@@ -430,7 +430,7 @@ function App() {
       {/* Footer */}
       <footer className="py-6 md:py-8 px-4 md:px-8 bg-gray-900 border-t border-gray-800">
         <div className="max-w-6xl mx-auto text-center text-gray-400">
-          <p className="text-sm md:text-base">&copy; 2024 Video Editor Portfolio. All rights reserved.</p>
+          <p className="text-sm md:text-base text-glow-gray">&copy; 2024 Video Editor Portfolio. All rights reserved.</p>
         </div>
       </footer>
     </div>
